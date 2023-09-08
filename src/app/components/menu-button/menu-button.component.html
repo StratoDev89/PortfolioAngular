@@ -1,0 +1,23 @@
+<div class="menu-button-main-container">
+  <div #overlay (click)="toggleMenu()" class="menu-button-container">
+    <div #menuIcon class="menu-button-svg-container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="40"
+        height="20"
+        viewBox="0 0 40 20"
+      >
+        <rect #topBar x="0" y="4" width="40" height="2" fill="white" />
+        <rect #bottomBar x="0" y="14" width="40" height="1" fill="white" />
+      </svg>
+      
+    </div>
+    <div #menuOptions  class="menu-options">
+        <ul>
+          <a *ngFor="let option of options" [href]="'#' + option" data-scroll-to>
+            <li id="{option}">{{ option }}</li>
+          </a>
+        </ul>
+      </div>
+  </div>
+</div>

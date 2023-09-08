@@ -1,0 +1,21 @@
+<section id="projects" class="projects-section" data-scroll-section>
+  <div class="projects-main-container">
+    <div class="projects-container">
+      <a
+        id="project"
+        *ngFor="let project of projectsData"
+        href="{{ project.address }}"
+        target="_blank"
+      >
+        <div>
+          <h1>
+            {{ project.title }}
+          </h1>
+          <aside>
+            <h2>{{ project.tech }}</h2>
+          </aside>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>

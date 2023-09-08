@@ -1,0 +1,30 @@
+.slider-text-container {
+    display: flex;
+    position: absolute;
+    top: 65vh;
+    left: 0px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .slider-track {
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+  }
+  
+  .slider-text-container h1 {
+    font-family: "Manrope", sans-serif;
+    color: rgb(255 255 255);
+    font-size: 160px;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+  }
+  
+  .slider-text-container h1:last-child {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+  
+  

@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Oswald&family=Poppins:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; /* Elimina el margen por defecto */
+  font-size: inherit; /* Hereda el tamaño de fuente del elemento padre */
+  font-weight: inherit; /* Hereda el peso de fuente del elemento padre */
+  line-height: inherit; /* Hereda la altura de línea del elemento padre */
+}
+

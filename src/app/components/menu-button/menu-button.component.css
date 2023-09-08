@@ -1,0 +1,72 @@
+.menu-button-main-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    height: 2.5rem /* 40px */;
+    z-index: 40;
+  }
+  
+  .menu-button-container {
+    position: relative;
+    display: flex;
+    width: 4rem /* 64px */;
+    height: 4rem /* 64px */;
+    padding: 0.5rem /* 8px */;
+    border-radius: 35px;
+    background-color: rgb(24 24 26);
+    border: 2px solid;
+    border-color: rgb(0 0 0);
+  }
+  
+  .menu-button-svg-container {
+    position: absolute;
+    top: 1.25rem /* 20px */;
+    left: 1rem /* 16px */;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.75rem /* 28px */;
+    height: 1.25rem /* 20px */;
+  }
+  
+  .menu-options {
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 220px;
+   
+  }
+  
+  .menu-options ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .menu-options li {
+    color: #fff;
+    font-size: 2.25rem /* 36px */;
+    line-height: 2.5rem /* 40px */;
+    font-family: "Oswald", sans-serif;
+    list-style: none;
+    transition: all ease-out 0.2s;
+  }
+  .menu-options li:hover {
+    transform: scale(1.2);
+  }
+  
+  .visible {
+    display: flex;
+  }
+  
+  /* Media query para tamaños de pantalla medianos (ejemplo: tabletas) */
+  @media (min-width: 768px) {
+    .menu-button-main-container {
+      top: 2.5rem /* 40px */;
+      left: 2.5rem /* 40px */;
+    }
+  }
+  

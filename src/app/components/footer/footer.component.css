@@ -1,0 +1,119 @@
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  padding: 1.25rem /* 20px */;
+  background-color: rgb(24 24 26);
+}
+
+.footer-top-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  line-height: 30px;
+  color: rgb(255 255 255);
+}
+
+.footer-top-container h3 {
+  font-family: "Oswald", sans-serif;
+  width: 75%;
+  /* height: 100%; */
+}
+
+.svg-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+}
+
+.footer-top-container svg {
+  position: absolute;
+  height: 2rem /* 32px */;
+  bottom: 20px;
+  left: 0 /* 40px */;
+  transform: scale(0.8);
+  transform-origin: center;
+}
+
+.footer-bottom-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 33%;
+  height: auto;
+  padding-left: 2.5rem /* 40px */;
+}
+
+.footer-socials {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  font-size: 1rem /* 16px */;
+  line-height: 1.5rem /* 24px */;
+  color: rgb(153 157 158);
+}
+
+.footer-socials-links {
+  width: 100%;
+  font-size: 1rem /* 16px */;
+  line-height: 1.5rem /* 24px */;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer-socials-links span {
+  color: rgb(255 255 255);
+}
+
+@media (min-width: 768px) {
+  .footer-section {
+    height: 40vh;
+    padding-bottom: 30px;
+  }
+
+  .footer-top-container {
+    padding-left: 5rem /* 80px */;
+    padding-right: 5rem /* 80px */;
+    font-size: 2.25rem /* 36px */;
+    align-items: center;
+
+    line-height: 2.5rem /* 40px */;
+  }
+
+  .footer-top-container svg {
+    bottom: 2.5rem /* 40px */;
+    left: 2.5rem /* 40px */;
+    transform: scale(1);
+  }
+
+  .footer-contacts {
+    width: 25%;
+  }
+
+  .footer-socials-links {
+    flex-direction: row;
+  }
+
+  .footer-socials-links a:last-of-type {
+    padding-left: 8px;
+  }
+}

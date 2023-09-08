@@ -46,7 +46,8 @@ export class SliderTextComponent implements OnInit {
         end: window.innerHeight,
         scrub: true,
         onUpdate: (e) => {
-          this.direction = e.direction *= -1;
+          let newDirection = e.direction
+          this.direction = newDirection *= -1;
         },
       },
     });
